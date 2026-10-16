@@ -1,0 +1,16 @@
+{
+  "znamka": 8,
+  "slabiny": [
+    "Cenník (PC 1440, obrazovky 3–5): tečkované linky jsou jen oddělovače mezi řádky, ne vodicí linky mezi názvem služby a cenou. Signatura „rejstřík“ z konceptu tak pořád chybí. Levý sloupec pod popisem skupiny zůstává prázdný a seznam se táhne přes 2,5 obrazovky. Oprava: řádek udělat jako flex (název, mezi ním a cenou span s flex:1 a border-bottom 1px dotted na účaří, pak cena). Do prázdného levého sloupce u skupiny „Pre profesionálov a firmy“ dát obloukový výřez fotky. Foto-02 už je v sekci O mne, proto použít jiný detail, aby se stejný záběr neopakoval celý.",
+    "Rytmus mezi sekcemi (PC buňky 5–6, mobil 6–7): pod „Ďalšie témy“ je asi 160 px prázdna před béžovou sekcí O mne. Pod podpisem PhDr. Ragasové zůstává béžový pruh asi 75 px. Mezi Supervíziou a Názory klientov je asi 250 px prázdného krému. Oprava: sjednotit padding sekcí na jednu hodnotu (cca 112–128 px na PC, 72–80 px na mobilu) a spodní padding béžové sekce O mne zkrátit na stejnou míru jako horní.",
+    "Hlavička: na mobilu jsou odkazy menu schované, ale chybí tlačítko menu, takže se na Služby, Referencie ani Kontakt nedá skočit. Oprava: vedle tlačítka dát hamburger 44×44 px s rozbalovacím seznamem 4 odkazů a tlačítko zkrátit na „Termín“, aby logo mohlo být větší. Na PC je v horní poloze stránky (scroll 0) hlavička vyšší a horní okraj ořízne svatozář nad srdcem v logu. Oprava: logu dát padding-top, nebo nechat hlavičku v obou stavech stejně vysokou (80 px), aby bylo logo vždy celé."
+  ],
+  "silne": [
+    "Vodoznak v hero je pryč, oblouková fotka se zlatou linkou je čistá a sedí ke konceptu „příběh, vstup do poradny“.",
+    "Hlavička na PC je opravená: logo má kolem 65 px, menu 15 px a vpravo je tlačítko „Objednať termín“.",
+    "Recenze jsou teď velkou Lorou se zlatou linkou a ladí s citátem v O mne. Celý web působí klidně a jednolitě.",
+    "Brand drží: paleta z loga (#00486b, hnědá, zlatá), vlastní fotky klientky a skutečný ceník, recenze i kontakty z podstránek milara.sk podle koncept.md. QA je bez chyb na všech 6 šířkách."
+  ],
+  "verdikt": "odeslat: hlavní výtky (vodoznak, hlavička, popisky ceníku, recenze) jsou opravené, web je klidný a v brandu klientky. Před odesláním ještě doplnit vodicí linky v ceníku, sjednotit mezery mezi sekcemi a přidat menu na mobilu.",
+  "_hash": "8200d55c870c057c077209f3d4a4ddf195ce857c"
+}

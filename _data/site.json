@@ -1,0 +1,51 @@
+{
+  "slug": "sk-milara",
+  "nazev": "Poradenstvo Milara",
+  "url": "https://webhunter-navrhy.github.io/sk-milara/",
+  "base": "/sk-milara/",
+  "lang": "sk",
+  "popis": "Poradenstvo Milara v Malackách: vzťahové poradenstvo, terapie, koučing, mediácia a supervízia pre pomáhajúce profesie. PhDr. Milada Ragasová, od roku 2008.",
+  "navrh": true,
+  "domena": "",
+  "og_image": "hero.jpg",
+  "logo": "logo.png",
+  "theme_color": "#f6f1ea",
+  "typ": "ProfessionalService",
+  "ico": "",
+  "kontakt": {
+    "email": "kontakt@milara.sk",
+    "telefon": "+421 905 520 365",
+    "adresa": {
+      "ulice": "Gen. M. R. Štefánika 43",
+      "psc": "",
+      "mesto": "Malacky",
+      "zeme": "SK"
+    }
+  },
+  "oteviraci_doba": [],
+  "sameas": [],
+  "cenove_rozpeti": "",
+  "formular": {
+    "endpoint": "",
+    "demo": true,
+    "predmet": "Správa z webu Poradenstvo Milara"
+  },
+  "nav": [
+    {
+      "text": "Služby a cenník",
+      "href": "#sluzby"
+    },
+    {
+      "text": "O mne",
+      "href": "#o-mne"
+    },
+    {
+      "text": "Referencie",
+      "href": "#referencie"
+    },
+    {
+      "text": "Kontakt",
+      "href": "#kontakt"
+    }
+  ]
+}

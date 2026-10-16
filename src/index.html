@@ -1,0 +1,95 @@
+{% extends "_base.html" %}
+{% set titulek = 'Poradenstvo Milara – poradenstvo, terapie a supervízia, Malacky' %}
+{% set cesta = '' %}
+{% block obsah %}
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <p class="stitok">PhDr. Milada Ragasová · Malacky · od roku 2008</p>
+      <h1>Spoločne riešime problémy</h1>
+      <p class="lead">Ponúkame zmenu, ktorú pocítite vo svojich vzťahoch, rozhodovaní, práci aj každodennom živote. Každý človek má svoj jedinečný príbeh, preto nehľadáme univerzálne riešenia.</p>
+      <p class="tlacidla"><a class="btn" href="#kontakt">Objednať termín</a><a class="btn btn-svetle" href="#sluzby">Služby a cenník</a></p>
+    </div>
+    <div class="hero-foto">
+      {{ img('hero.jpg', 'Poradkyňa Milada Ragasová pri rozhovore s klientkou v príjemne zariadenej poradni', sizes='(min-width: 60rem) 46vw, 100vw', cls='foto-hero') }}
+    </div>
+  </div>
+</section>
+
+<section class="uvod">
+  <div class="wrap uvod-grid">
+    <p>Poradenstvo a terapie pre jednotlivcov, páry alebo rodinu.</p>
+    <p>Supervízia a koučing pre profesionálov.</p>
+    <p>Niektoré služby poskytujeme aj online, ostatné v Malackách.</p>
+  </div>
+</section>
+
+<section class="sekce" id="sluzby">
+  <div class="wrap">
+    <div class="sluzby-hlava">
+      <h2>Služby a cenník</h2>
+      <p class="poznamka">Cenník platný od 1. 7. 2026. Cena je vždy za jedno sedenie alebo hodinu, ak nie je uvedené inak.</p>
+    </div>
+    {% for g in data.sluzby %}
+    <div class="skupina">
+      <div class="skupina-uvod">
+        <h3>{{ g.skupina }}</h3>
+        <p>{{ g.text }}</p>
+      </div>
+      <ul role="list" class="cennik">
+        {% for p in g.polozky %}<li><div><strong>{{ p.n }}</strong>{% if p.d %}<span>{{ p.d }}</span>{% endif %}</div><b class="cena">{{ p.c }}</b></li>{% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
+    <p class="poznamka dole">Ďalšie témy: regresná terapia, EFT, rodinné konštelácie, transformácia. Podrobnosti poskytneme pri objednávaní.</p>
+  </div>
+</section>
+
+<section class="sekce o-mne" id="o-mne">
+  <div class="wrap o-grid">
+    <div class="o-foto">{{ img('omne.jpg', 'Milada Ragasová si pri konzultácii robí poznámky', sizes='(min-width: 60rem) 40vw, 100vw') }}</div>
+    <div class="o-text">
+      <h2>Človek nie je súbor problémov, ale príbeh</h2>
+      <p class="citat">„Nevnímam človeka ako súbor problémov, ktoré treba odstrániť. Vnímam ho ako príbeh, ktorý potrebuje byť pochopený.“</p>
+      <p>Som poradca, konzultant a podpora s dlhoročnou praxou v oblasti poradenstva a terapií, špecializujem sa aj na supervíziu v pomáhajúcich profesiách. Moja prax je založená na individuálnom prístupe ku každému klientovi a spoločnom hľadaní riešení.</p>
+      <p>Človeka vnímam celostne, preto sa na každý problém pozerám zo všetkých dostupných strán. Kombinujem hlbinnú regresnú terapiu, transakčnú analýzu a naratívnu terapiu, aby sme spolu nielen našli príčiny ťažkostí, ale aj zdroje sily, ktoré už vo Vás existujú.</p>
+      <p class="podpis">PhDr. Milada Ragasová</p>
+    </div>
+  </div>
+</section>
+
+<section class="sekce super">
+  <div class="wrap o-grid obr">
+    <div class="o-text">
+      <h2>Supervízia pre pomáhajúce profesie</h2>
+      <p>Svoje poznatky odovzdávam ďalej ako lektorka a supervízorka pri vzdelávaní poradcov, terapeutov, koučov a ďalších odborníkov. Skupinová aj individuálna supervízia je v cenníku vyššie.</p>
+      <p><a class="btn btn-svetle" href="#kontakt">Spýtať sa na termín</a></p>
+    </div>
+    <div class="o-foto">{{ img('supervizia.jpg', 'Skupinové stretnutie pomáhajúcich profesií v kruhu', sizes='(min-width: 60rem) 40vw, 100vw') }}</div>
+  </div>
+</section>
+
+<section class="sekce" id="referencie">
+  <div class="wrap">
+    <h2>Názory klientov</h2>
+    <div class="ref-grid">
+      {% for r in data.referencie %}<figure><blockquote>{{ r.t }}</blockquote><figcaption>{{ r.k }}</figcaption></figure>{% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="sekce kontakt" id="kontakt">
+  <div class="wrap kontakt-grid">
+    <div>
+      <h2>Chcete si rezervovať termín?</h2>
+      <p>Napíšte nám alebo zavolajte. Niektoré služby poskytujeme podľa dohody aj online.</p>
+      <dl>
+        <dt>Adresa</dt><dd>Gen. M. R. Štefánika 43, Malacky</dd>
+        <dt>Telefón</dt><dd><a href="tel:+421905520365">+421 905 520 365</a></dd>
+        <dt>E-mail</dt><dd><a href="mailto:kontakt@milara.sk">kontakt@milara.sk</a></dd>
+      </dl>
+    </div>
+    <div>{% include "_formular.html" %}</div>
+  </div>
+</section>
+{% endblock %}

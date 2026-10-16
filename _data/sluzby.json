@@ -1,0 +1,90 @@
+[
+  {
+    "skupina": "Pre jednotlivcov, páry a rodiny",
+    "text": "Rozhovor, v ktorom sa spoločne pozeráme na celý príbeh: korene, súvislosti aj zdroje sily.",
+    "polozky": [
+      {
+        "n": "Individuálna konzultácia",
+        "d": "konzultácia, terapia alebo poradňa, 60 až 100 min.",
+        "c": "80 €"
+      },
+      {
+        "n": "Vzťahové poradenstvo",
+        "d": "párové, rodinné aj individuálne, za 1 hodinu",
+        "c": "45 €"
+      },
+      {
+        "n": "Poradenstvo pre deti a dorast",
+        "d": "sedenie 50 min.",
+        "c": "30 €"
+      },
+      {
+        "n": "Krízová intervencia a termíny cez víkend",
+        "d": "",
+        "c": "120 €"
+      },
+      {
+        "n": "Balíček 5 stretnutí",
+        "d": "individuálne konzultácie, jedno stretnutie zadarmo",
+        "c": "320 €"
+      }
+    ]
+  },
+  {
+    "skupina": "Pre profesionálov a firmy",
+    "text": "Koučing, mediácia a supervízia pre manažérov, podnikateľov a pomáhajúce profesie.",
+    "polozky": [
+      {
+        "n": "Koučing",
+        "d": "za 1 hodinu; k dispozícii je aj celodenný Koučing deň (5 – 6 hodín)",
+        "c": "60 €"
+      },
+      {
+        "n": "Supervízia skupinová",
+        "d": "za 1 hodinu",
+        "c": "60 €"
+      },
+      {
+        "n": "Supervízia individuálna",
+        "d": "za 1 hodinu",
+        "c": "55 €"
+      },
+      {
+        "n": "Mediácia",
+        "d": "predmediačné stretnutie, ďalej podľa druhu sporu (od 45 €/hod.)",
+        "c": "60 €"
+      },
+      {
+        "n": "Teambuilding",
+        "d": "",
+        "c": "dohodou"
+      }
+    ]
+  },
+  {
+    "skupina": "Telo, energia a ďalšie metódy",
+    "text": "Doplnkové metódy, ktoré podporujú celostný pohľad na človeka.",
+    "polozky": [
+      {
+        "n": "Biorezonancia a analýza stavu",
+        "d": "komplex; kontrola alebo dieťa do 18 rokov 50 €",
+        "c": "90 €"
+      },
+      {
+        "n": "Autopatia – homeopatia",
+        "d": "plus platba za autopatickú fľašu",
+        "c": "30 – 40 €"
+      },
+      {
+        "n": "Relaxácia telovými sviečkami",
+        "d": "60 – 90 min., plus 1,90 € za sviečku",
+        "c": "70 €"
+      },
+      {
+        "n": "Hirudoterapia",
+        "d": "liečba pijavicou lekárskou, plus 7 € za kus",
+        "c": "30 €"
+      }
+    ]
+  }
+]
